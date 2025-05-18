@@ -3,7 +3,7 @@
 This project helps job seekers improve their resumes by automatically aligning them to a specific job description using an AI-powered agent workflow. It ensures the resume is optimized for Applicant Tracking Systems (ATS) and human recruiters while preserving formatting, layout, and professional styling.
 
 
-## 🚀 Features
+## Features
 
 - Upload `.pdf` resumes
 - Paste a job description
@@ -15,7 +15,7 @@ This project helps job seekers improve their resumes by automatically aligning t
 
 ---
 
-## 🛠️ Tech Stack
+## Tech Stack
 
 | Component         | Tool/Library              |
 |------------------|---------------------------|
@@ -28,21 +28,26 @@ This project helps job seekers improve their resumes by automatically aligning t
 ---
 
 
-## 📦 Installation
-
+## Installation
 ```bash
-# Clone the repository
+# 1. Clone the repository
 git clone https://github.com/HariDarshan2321/resume-optimizer.git
 cd resume-optimizer
-
-# Create and activate virtual environment
+# 2. Create and activate a virtual environment
+# For macOS/Linux:
 python -m venv venv
-source venv/bin/activate  # or venv\Scripts\activate on Windows
+source venv/bin/activate
 
-# Install dependencies
-pip install -r requirements.txt
-```bash
-Create a .env file in the root directory:
-and add ypur
+# For Windows:
+python -m venv venv
+venv\Scripts\activate
+
+# 4. Create a .env file in the root directory and add your Groq API key:
 GROQ_API_KEY=your_groq_api_key_here
+
+# 5. Run the Streamlit app
+streamlit run app.py
+
+
+
 
