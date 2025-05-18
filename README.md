@@ -1,4 +1,4 @@
-# AI Resume Optimizer for ATS (Streamlit + LLM + PDF/DOCX)
+# Agentic AI Resume Optimizer for ATS
 
 This project helps job seekers improve their resumes by automatically aligning them to a specific job description using an AI-powered agent workflow. It ensures the resume is optimized for Applicant Tracking Systems (ATS) and human recruiters while preserving formatting, layout, and professional styling.
 
