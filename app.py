@@ -4,7 +4,7 @@ from agents.aligner import align_resume_with_job
 from agents.formatter import build_docx
 import os
 
-st.title("📄 AI Resume Optimizer for ATS")
+st.title("Agentic AI Resume Optimizer for ATS")
 
 resume_file = st.file_uploader("Upload your resume (.pdf or .docx)", type=["pdf", "docx"])
 job_description = st.text_area("Paste the Job Description")
