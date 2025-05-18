@@ -1,0 +1,8 @@
+streamlit
+python-docx
+fitz
+PyMuPDF
+groq 
+python-dotenv
+langchain
+phidata 
