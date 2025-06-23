@@ -41,11 +41,11 @@ st.markdown("""
 """, unsafe_allow_html=True)
 
 # Main title
-st.markdown('<h1 class="main-header">🚀 Agentic AI Resume Optimizer for ATS</h1>', unsafe_allow_html=True)
+st.markdown('<h1 class="main-header"> AI Resume Optimizer for ATS</h1>', unsafe_allow_html=True)
 
 # Sidebar for options
 with st.sidebar:
-    st.header("⚙️ Options")
+    st.header("Options")
 
     # Resume format selection
     resume_format = st.radio(
@@ -93,7 +93,7 @@ with col1:
             resume_file = None
 
 with col2:
-    st.subheader("💼 Job Description")
+    st.subheader("Job Description")
 
     job_description = ""
 
@@ -152,9 +152,9 @@ with col_status3:
         st.success("✅ System ready")
 
 # Main processing button
-if st.button("🚀 Optimize Resume", type="primary", disabled=not (resume_file and job_description)):
+if st.button("Optimize Resume", type="primary", disabled=not (resume_file and job_description)):
     if resume_file and job_description:
-        with st.spinner("🔄 Analyzing and optimizing your resume..."):
+        with st.spinner("Analyzing and optimizing your resume..."):
             try:
                 # Extract text based on format
                 if resume_format == "Standard (PDF/DOCX)":
@@ -193,7 +193,7 @@ if st.button("🚀 Optimize Resume", type="primary", disabled=not (resume_file a
                 with col_download:
                     with open(output_path, "rb") as f:
                         download_button = st.download_button(
-                            label=f"📥 Download Optimized Resume (.{file_extension})",
+                            label=f"Download Optimized Resume (.{file_extension})",
                             data=f,
                             file_name=f"optimized_resume.{file_extension}",
                             mime=mime_type,
@@ -206,7 +206,7 @@ if st.button("🚀 Optimize Resume", type="primary", disabled=not (resume_file a
 
                 with col_preview:
                     # Show optimization summary
-                    with st.expander("📊 Optimization Summary", expanded=True):
+                    with st.expander("Optimization Summary", expanded=True):
                         st.write("**Changes made:**")
                         st.write("• Enhanced professional summary")
                         st.write("• Optimized keywords for ATS")
@@ -227,20 +227,20 @@ show_feedback_popup()
 # Footer with additional information
 st.markdown("---")
 st.markdown("""
-### 🎯 Features:
+### Features:
 - **ATS Optimization**: Ensures your resume passes Applicant Tracking Systems
 - **Custom LaTeX Support**: Upload your own LaTeX templates for personalized formatting
 - **URL Job Scraping**: Automatically extract job descriptions from popular job sites
 - **AI-Powered Alignment**: Smart content optimization based on job requirements
 - **Multiple Formats**: Support for PDF, DOCX, and LaTeX formats
 
-### 💡 Tips for Best Results:
+### Tips for Best Results:
 1. **Use complete job descriptions** for better optimization
 2. **Review the optimized content** before submitting
 3. **Customize further** based on your specific experience
 4. **Test with different job descriptions** to see variations
 
-### 🔧 Supported Job Sites:
+### Supported Job Sites:
 LinkedIn • Indeed • Glassdoor • Monster • CareerBuilder • ZipRecruiter • AngelList • Stack Overflow Jobs
 """)
 
