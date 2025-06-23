@@ -5,3 +5,5 @@ groq
 python-dotenv
 langchain
 phidata 
+requests
+beautifulsoup4
